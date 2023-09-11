@@ -1,11 +1,16 @@
 body {
-    background-color: brown;
+    background-color: rgba(58,175,169,255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 80px;
+    font-size: 16px;
+    color: rgba(21,39,45,255);
 }
 
 body, h1, h2, p, header{
     margin: 0;
     padding: 0;
 }
+
 
 .centered-image{
     text-align: center;
@@ -25,5 +30,6 @@ p {
     font-size: 20px;
 }
 a{
-    color:cornsilk
+    color:cornsilk;
+    text-align: center;
 }
