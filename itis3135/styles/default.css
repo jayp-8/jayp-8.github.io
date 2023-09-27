@@ -33,3 +33,33 @@ a{
     color:cornsilk;
     text-align: center;
 }
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd; 
+  }
+  
+  tr:first-child {
+    background-color: #333;
+    color: white; 
+  }
+  #survey-form{
+    display: block;
+    border: 2px solid black;
+    text-align: center;
+  }
+  .title{
+    text-align: center;
+  }
