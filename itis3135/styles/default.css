@@ -11,13 +11,20 @@ body, h1, h2, p, header{
     padding: 0;
 }
 
+footer, header{
+  text-align: center;
+}
+
 
 .centered-image{
-    text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption-italic {
     font-style: italic;
+    text-align: center;
 }
   
 h1 {
