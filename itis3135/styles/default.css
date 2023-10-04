@@ -4,11 +4,7 @@ body {
     padding: 80px;
     font-size: 12px;
     color: rgba(21,39,45,255);
-}
-
-body, h1, h2, p, header{
     margin: 0;
-    padding: 0;
 }
 
 footer, header{
