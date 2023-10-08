@@ -12,6 +12,8 @@ footer, header{
 }
 
 
+
+
 .centered-image{
   display: block;
   margin-left: auto;
@@ -45,6 +47,7 @@ p {
 a{
     color:cornsilk;
     text-align: center;
+    text-decoration: none;
 }
 table{
     border-collapse: collapse;
