@@ -27,21 +27,32 @@ function greeting(event) {
 }
 
 function displayPolygonName() {
-    const numberInput = document.getElementById("number").value;
+    const numberInput = document.getElementById("polygonnumber").value;
     const absoluteValue = Math.abs(parseFloat(numberInput));
     const roundedValue = Math.round(absoluteValue);
 
-    const polygonNames = [
-        "Monogon", "Digon", "Triangle", "Quadrilateral", "Pentagon",
-        "Hexagon", "Heptagon", "Octagon", "Nonagon", "Decagon"
-    ];
-
-    let polygonName = "Unknown";
-    if (roundedValue >= 1 && roundedValue <= 10) {
-        polygonName = polygonNames[roundedValue - 1];
+    if (roundedValue == 1) {
+        alert("Monogon");
+    } else if (roundedValue == 2) {
+        alert("Digon");
+    } else if (roundedValue == 3) {
+        alert("Trigon");
+    } else if (roundedValue == 4) {
+        alert("Tetragon");
+    } else if (roundedValue == 5) {
+        alert("Pentagon");
+    } else if (roundedValue == 6) {
+        alert("Hexagon");
+    } else if (roundedValue == 7) {
+        alert("Heptagon");
+    } else if (roundedValue == 8) {
+        alert("Octagon");
+    } else if (roundedValue == 9) {
+        alert("Enneagon");
+    } else if (roundedValue == 10) {
+        alert("Decagon");
     }
 
-    alert(`Your favorite number corresponds to a ${polygonName}.`);
 }
 
 displayDateTime();
