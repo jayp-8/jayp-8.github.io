@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Patel Jubilant Panther|| ITIS 3135 Contract</title>
+    <title>Jay Patel Jubilant Panther|| ITIS 3135 Firstscripts</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 
@@ -12,11 +12,11 @@
     <header>
         <h1> Jay Patel's Jubilant Panther || ITIS 3135</h1>
         <nav>
-            <a href = "./"> Home</a>
+            <a href="./"> Home</a>
             |
-            <a href = "introduction.html"> Introduction </a>
+            <a href="introduction.html"> Introduction </a>
             |
-            <a href = "contract.html">Contract</a>
+            <a href="contract.html">Contract</a>
             |
             <a href="tables.html">Tables</a>
             |
@@ -31,16 +31,21 @@
         </nav>
     </header>
     <main>
-        <h1 id="title">Contract</h1>
-        <p> I, Jay Patel agree to abide by the terms in my Fall 2023 ITIS-3135-091 Web App Design and Development with
-            my instructor, D.I. Von Briesen. </p>
-        <p> I understand that all work that I do on my school and personal websites will be publicly available to the
-            world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep
-            private. </p>
-
-        <p> Signed: </p>
-
-        <p> Jay Patel, 5 September 2023 </p>
+        <h2> First Scripts </h2>
+        <h3 id="dateTimeDisplay"></h3>
+        <form id="firstscript">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="mood">How are you feeling today:</label>
+            <input type="text" id="mood" required>
+            <br>
+            <label for="number">Your Favorite Number (1-10):</label>
+            <input type="number" id="number" min="1" max="10" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="greeting"></div>
     </main>
     <footer>
         <nav>
@@ -61,16 +66,17 @@
         </nav>
         <a href="patel-enterprises.com/index.html">Page Built by Patel Enterprises © 2023</a>
         <br>
-            <a href="https://validator.w3.org/check?uri=referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413"
-                    alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                    alt="Valid CSS!">
-            </a>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413"
+                alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
     </footer>
+    <script src="scripts/defaultscripts.js"></script>
 </body>
 
 </html>

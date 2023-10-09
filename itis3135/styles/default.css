@@ -44,11 +44,13 @@ p {
     font-family: verdana;
     font-size: 12px;
 }
+
 a{
     color:cornsilk;
     text-align: center;
     text-decoration: none;
 }
+
 table{
     border-collapse: collapse;
     width: 100%;
