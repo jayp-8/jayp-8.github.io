@@ -13,7 +13,7 @@ function displayDateTime() {
     const formattedDateTime = `Today is ${hours}:${(minutes < 10 ? '0' : '') + minutes}${timeFormat} on ${dayOfWeek}, ${dayOfMonth} ${month}, ${year}`;
     const dateTimeElement = document.getElementById("dateTimeDisplay");
     dateTimeElement.textContent = formattedDateTime;
-    
+
 }
 
 function greeting(event) {
@@ -22,7 +22,7 @@ function greeting(event) {
     const mood = document.getElementById("mood").value;
     const greeting = document.getElementById("greeting");
 
-    greeting.textContent = `Hello, ${name}! You're feeling ${mood} today.`;
+    greeting.textContent = `Hello, ${name}, Patel-Enterprises welcomes you! It looks like you're feeling ${mood} today!`;
 }
 
 function displayPolygonName() {
@@ -51,8 +51,27 @@ function displayPolygonName() {
     } else if (roundedValue == 10) {
         alert("Decagon");
     }
+}
 
+function feedPanther(){
+    alert("The panther is full and happy!");
+}
 
+function insult(){
+    alert("You are a bad person!");
+}
+
+function sumOfTwoNumbers(){
+    const number1 = prompt("Enter the first number");
+    const number2 = prompt("Enter the second number");
+    const sum = parseInt(number1) + parseInt(number2);
+    alert(`The sum of ${number1} and ${number2} is ${sum}.`);
+}
+
+function findTip(){
+    const billAmount = prompt("Enter the bill amount");
+    const tipAmount = parseInt(billAmount) * 1.15;
+    alert(`The bill including the tip is ${tipAmount}`);
 }
 
 displayDateTime();
