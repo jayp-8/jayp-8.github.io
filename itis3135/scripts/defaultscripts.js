@@ -22,7 +22,6 @@ function greeting(event) {
     const mood = document.getElementById("mood").value;
     const greeting = document.getElementById("greeting");
 
-    // Display the greeting with the user's name and mood
     greeting.textContent = `Hello, ${name}! You're feeling ${mood} today.`;
 }
 
@@ -52,6 +51,7 @@ function displayPolygonName() {
     } else if (roundedValue == 10) {
         alert("Decagon");
     }
+
 
 }
 
