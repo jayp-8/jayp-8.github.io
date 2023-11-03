@@ -11,9 +11,6 @@ footer, header{
   text-align: center;
 }
 
-
-
-
 .centered-image{
   display: block;
   margin-left: auto;
@@ -79,5 +76,18 @@ th, td {
     text-align: center;
   }
   .title{
+    text-align: center;
+  }
+  
+  #Wireframe{
+    display: block;
+    border: 2px solid black;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #wireframecaption{
     text-align: center;
   }
