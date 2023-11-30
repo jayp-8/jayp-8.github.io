@@ -16,9 +16,9 @@
     <main>
         <h2>BYO Intro</h2>
         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-        <form id="byo-intro">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
+        <form id="byo-intro" class="byo-form">
+            <label for="name" class="byo-label">Name:</label>
+            <input type="text" id="name" class="byo-input" required>
             <br><br>
 
             <label for="mascot">Mascot:</label>
@@ -68,13 +68,13 @@
             <input type="text" id="anythingElse">
             <br><br>
 
-            <input type="checkbox" id="agreement" required>
-            <label for="agreement">I understand that what is on this page is not password protected and I will not put
-                anything here that I don't want publicly available.</label>
+            <label for="agreement" class="byo-label">I understand that what is on this page is not password protected
+                and I will not put anything here that I don't want publicly available.</label>
+            <input type="checkbox" id="agreement" class="byo-checkbox" required>
             <br><br>
 
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input type="submit" value="Submit" class="byo-button">
+            <input type="reset" value="Reset" class="byo-button">
         </form>
     </main>
     <footer>
