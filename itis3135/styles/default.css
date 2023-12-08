@@ -137,6 +137,35 @@ tr:first-child {
   margin-bottom: 10px;
   background-color: #222; 
 }
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+#preview-area {
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+.thumbnail {
+  width: 50px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block; 
+}
 
 @media (min-width: 576px) {
   body {

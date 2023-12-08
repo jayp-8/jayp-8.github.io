@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Ventures</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        img {
+            width: 50%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        figcaption{
+            text-align: center;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>City Ventures
+        </h1>
+        <nav>
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#about" onclick="showSection('about')">About Me</a>
+            <a href="#best-times" onclick="showSection('best-times')">Best Times</a>
+            <a href="#photo-album" onclick="showSection('photo-album')">Photo Album</a>
+            <a href="#why" onclick="showSection('why')">Why</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active">
+            <h1>Welcome to My Hobby Site</h1>
+            <figure>
+                <img src="images/IMG_0822.png" alt="planewindow">
+                <figcaption>Plane Window</figcaption>
+            </figure>
+            <p>
+                Welcome to City Ventures, my personal hobby page dedicated to sharing my passion for exploring and
+                capturing different cities in U.S and Canada.
+            </p>
+            <p>
+                Embark on a visual journey with me as I showcase cities like Niagara Falls, New York City, Asheville, and
+                Quebec City.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Hi, my name is Jay Patel. I am a junior at UNCC majoring in computer science with a concentration in
+                Software Engineering
+            </p>
+            <p>
+                I am a huge fan of traveling and exploring new places. I love to capture the beauty of the places I
+                visit through my phone camera.
+            </p>
+        </section>
+
+        <section id="best-times">
+            <h2>Recent Trip</h2>
+            <p>
+                I recently visited New York City over the Thanksgiving break with my cousins and we explored the city. We visted Bryant Park, Korean Town, Times Square, and the Rockefeller Christmas Tree all in one day.
+            </p>
+            <p>
+                Here are some of the pictures I took during my trip.
+            </p>
+            <figure>
+                <img src="images/IMG_2082.png" alt="Hudson Yards">
+                <figcaption>Hudson Yards</figcaption>
+            </figure>
+            <figure>
+                <img src="images/IMG_2094.png" alt="Rockefeller">
+                <figcaption>Rockefeller Center Christmas Tree</figcaption>
+            </figure>
+        </section>
+
+        <section id="photo-album">
+            <h2>Photo Album</h2>
+            <figure>
+                <img src="images/IMG_0274.png" alt="mountains">
+                <figcaption>Mountains in Asheville, NC</figcaption>
+            </figure>
+            <figure>
+                <img src="images/IMG_2814.png" alt="Quebec">
+                <figcaption>Old Quebec, QC</figcaption>
+            </figure>
+            <figure>
+                <img src="images/IMG_2651.png" alt="Niagara Falls">
+                <figcaption>Niagara Falls</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <figure>
+                <img src="images/IMG_1719.png" alt="kayak">
+                <figcaption>Kayaking in Jacques-Cartier</figcaption>
+            </figure>
+            <p>
+                One of the most delightful aspects of travelling is the opportunity to try various cuisine each city has to offer.
+            </p>
+            <p>
+                Roaming new cities and experiencing different cultures expands my worldview and allows me to appreciate the nature, views, skyline, and food each city has to explore.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <a href="patel-enterprises.com/index.html">Page Built by Patel Enterprises © 2023,</a>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413"
+                alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(function (section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

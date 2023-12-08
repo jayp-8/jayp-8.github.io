@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Patel || Jubilant Panther || ITIS 3135 Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Slideshow</h2>
+        <div id="preview-area" class="slideshow-container">
+            <img class="slideshow-image" src="images/jaguar.png" alt="J Image">
+            <img class="slideshow-image" src="images/alligator.png" alt="A Image">
+            <img class="slideshow-image" src="images/yak.png" alt="Y Image">
+            <img class="slideshow-image" src="images/peacock.png" alt="P Image">
+            <img class="slideshow-image" src="images/armadillo.png" alt="A Image">
+            <img class="slideshow-image" src="images/tiger.png" alt="T Image">
+            <img class="slideshow-image" src="images/elephant.png" alt="E Image">
+            <img class="slideshow-image" src="images/lion.png" alt="L Image">
+          
+            <div>
+              <img class="thumbnail" src="images/jaguar.png" alt="J Image" onclick="goToSlide(0)">
+              <span class="caption">Jaguar</span>
+              <img class="thumbnail" src="images/alligator.png" alt="A Image" onclick="goToSlide(1)">
+              <span class="caption">Alligator</span>
+              <img class="thumbnail" src="images/yak.png" alt="Y Image" onclick="goToSlide(2)">
+              <span class="caption">Yak</span>
+              <img class="thumbnail" src="images/peacock.png" alt="P Image" onclick="goToSlide(3)">
+              <span class="caption">Peacock</span>
+              <img class="thumbnail" src="images/armadillo.png" alt="A Image" onclick="goToSlide(4)">
+              <span class="caption">Armadillo</span>
+              <img class="thumbnail" src="images/tiger.png" alt="T Image" onclick="goToSlide(5)">
+              <span class="caption">Tiger</span>
+              <img class="thumbnail" src="images/elephant.png" alt="E Image" onclick="goToSlide(6)">
+              <span class="caption">Elephant</span>
+              <img class="thumbnail" src="images/lion.png" alt="L Image" onclick="goToSlide(7)">
+              <span class="caption">Lion</span>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>
